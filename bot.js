@@ -50,8 +50,8 @@ client.on('ready', () => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('#bc')){
- if (message.author.id !== '252813587188416512') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
- if(!message.author.id === '252813587188416512') return;
+ if (message.author.id !== '228139766573432832') return message.reply('** هذا الأمر ففط لصاحب البوت و شكراًً **')
+ if(!message.author.id === '354148327090290693') return;
 message.channel.sendMessage('تم إرسال الرساله بنجاح |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
