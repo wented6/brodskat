@@ -52,7 +52,7 @@ let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('#bc')){
  if (message.author.id !== '228139766573432832') return message.reply('** هذا الأمر ففط لصاحب البوت و شكراًً **')
  if(!message.author.id === '354148327090290693') return;
- if(!message.author.id === '286926707531841536') return;
+if (message.author.id !== '286926707531841536') return
 message.channel.sendMessage('تم إرسال الرساله بنجاح |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
