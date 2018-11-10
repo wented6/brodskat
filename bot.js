@@ -37,12 +37,7 @@ client.on('ready', () => {
   
   });
   
-   
- 
- 
- 
- 
- 
+  
  
  
  
@@ -50,9 +45,8 @@ client.on('ready', () => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('#bc')){
- if (message.author.id !== '228139766573432832') return message.reply('** هذا الأمر ففط لصاحب البوت و شكراًً **')
+ if (message.author.id !== '228139766573432832') return
  if(!message.author.id === '354148327090290693') return;
-if (message.author.id !== '286926707531841536') return
 message.channel.sendMessage('تم إرسال الرساله بنجاح |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -65,9 +59,27 @@ m.sendMessage(args)
  
  
  
+  client.on('message', message => {
+            if(!message.channel.guild) return;
+let args = message.content.split(' ').slice(1).join(' ');
+if (message.content.startsWith('#bc')){
+ if (message.author.id !== '286926707531841536') return 
+ if(!message.author.id === '286926707531841536') return;
+message.channel.sendMessage('تم إرسال الرساله بنجاح |:white_check_mark:')
+client.users.forEach(m =>{
+m.sendMessage(args)
+})
+}
+});
+
  
- 
- const adminprefix = "bc";
+
+
+
+
+
+
+const adminprefix = "bc";
 const devs = ['228139766573432832','228139766573432832'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
