@@ -94,9 +94,19 @@ msg.delete();
 
 
 
- client.user.setGame(`Universe server .`,'https://www.twitch.tv/MeeRcY')
- 
- 
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setGame(`Universe server .`,'https://www.twitch.tv/MeeRcY')
+  client.user.setStatus("idle")
+});
+
+
+
+client.login(process.env.BOT_TOKEN);
  
  
  
